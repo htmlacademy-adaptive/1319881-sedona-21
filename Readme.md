@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Check status][check-image]][check-url]
 
 * Студент: [Екатерина Захарова](https://up.htmlacademy.ru/adaptive/21/user/1319881).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Мамаев](https://up.htmlacademy.ru/adaptive/21/user/888525).
 
 ---
 
