@@ -1,0 +1,289 @@
+.advantage {
+  width: 100%;
+  padding: 26px 20px 0;
+  text-align: center;
+  background-color: $bg-color-advantage;
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 38px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 43px 38px 60px;
+  }
+
+  &--full {
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+      display: flex;
+      max-width: 100%;
+    }
+
+    .advantage__title {
+      @media (min-width: $desktop-width) {
+        padding: 0 65px;
+      }
+    }
+  }
+
+  &--housing,
+  &--souvenirs,
+  &--food {
+    display: flex;
+
+    text-align: left;
+
+    background-color: $bg-color-main;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: column;
+      align-items: center;
+      padding: 63px 10px 59px;
+
+      text-align: center;
+    }
+
+    &::before {
+      content: "";
+
+      display: block;
+
+      flex-shrink: 0;
+
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 25px;
+      }
+    }
+
+    .advantage__text {
+      padding-top: 9px;
+
+      @media (min-width: $tablet-width) {
+        padding-top: 0;
+      }
+    }
+
+    .advantage__title {
+      margin-bottom: 16px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 24px;
+      }
+    }
+
+    p {
+      margin-bottom: 2px;
+    }
+  }
+
+  &--housing {
+    padding: 26px 20px 10px 21px;
+
+    &::before {
+      width: 39px;
+      height: 37px;
+
+      margin-right: 8px;
+
+      background-image: url("../img/icon-house.svg");
+
+      @media (min-width: $tablet-width) {
+        width: 75px;
+        height: 72px;
+        margin-top: 3px;
+        margin-right: 0;
+
+        background-image: url("../img/icon-house-tablet.svg");
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 57px 30px 58px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 58px 50px 78px;
+    }
+  }
+
+  &--souvenirs {
+    padding: 5px 20px 10px 21px;
+
+    &::before {
+      width: 32px;
+      height: 38px;
+      margin-left: 5px;
+      margin-right: 11px;
+
+      background-image: url("../img/icon-gift.svg");
+
+      @media (min-width: $tablet-width) {
+        width: 64px;
+        height: 75px;
+        margin-right: 0;
+        margin-left: 0;
+
+        background-image: url("../img/icon-gift-tablet.svg");
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 57px 30px 58px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 58px 30px 78px;
+    }
+  }
+
+  &--food {
+    padding: 11px 20px 33px 21px;
+
+    &::before {
+      width: 40px;
+      height: 35px;
+      margin-left: -2px;
+      margin-right: 10px;
+
+      background-image: url("../img/icon-burger.svg");
+
+      @media (min-width: $tablet-width) {
+        width: 76px;
+        height: 68px;
+        margin: 6px 0 27px;
+
+        background-image: url("../img/icon-burger-tablet.svg");
+      }
+    }
+
+    .advantage__text {
+      padding-top: 3px;
+
+      @media (min-width: $tablet-width) {
+        padding-top: 0;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      grid-column: 2 / 2;
+      grid-row: 2;
+      padding: 57px 50px 58px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 58px 50px 78px;
+    }
+  }
+}
+
+.advantage__text {
+  padding: 49px 12px 37px 13px;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 17px;
+
+    &:last-child {
+      margin-bottom: 2px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &--width {
+    @media (min-width: $tablet-width) {
+      min-width: 256px;
+      padding: 40px 32px 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 400px;
+      padding: 48px 60px 42px;
+    }
+  }
+
+  &--bgcolor {
+    color: $font-color-accent;
+    background-color: $bg-color-accent;
+  }
+
+  &--padding {
+    padding: 0 2px;
+  }
+
+  &--indents {
+    padding-top: 39px;
+    padding-bottom: 33px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 43px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 52px 85px 33px;
+    }
+
+    .advantage__title {
+      @media (min-width: $tablet-width) {
+        padding: 0 21px 0 20px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding: 0 39px 0 40px;
+      }
+    }
+  }
+
+  &--border {
+    padding: 0 17px 22px;
+
+    border-bottom: 1px solid $border-color-advantage;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+
+      border-bottom: none;
+    }
+  }
+}
+
+.advantage__title {
+  margin: 0 0 11px;
+
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 75px;
+  }
+}
+
+.advantage__picture {
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    min-width: 512px;
+  }
+
+  img {
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  &--invert {
+    @media (min-width: $tablet-width) {
+      order: -1;
+    }
+  }
+}

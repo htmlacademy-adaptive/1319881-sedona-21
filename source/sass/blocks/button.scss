@@ -1,0 +1,36 @@
+.button {
+  display: block;
+  max-width: 280px;
+  min-height: 58px;
+  padding: 15px 32px 17px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $font-color-button;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  border: none;
+  background-color: $bg-color-button;
+
+  transition: background-color 0.4s, color 0.4s;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $bg-color-button--hover;
+  }
+
+  &:active {
+    color: rgba($font-color-button, 0.3);
+
+    background-color: $bg-color-button--active;
+  }
+
+  &[disabled],
+  &--disabled {
+    background-color: $bg-color-button--disabled;
+  }
+}
