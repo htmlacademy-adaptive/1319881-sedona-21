@@ -1,0 +1,45 @@
+.copyright {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__text {
+  display: inline-block;
+  margin-right: 11px;
+  margin-left: 3px;
+
+  line-height: 26px;
+  color: $font-color-heading;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 12px;
+    margin-left: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 34px;
+  }
+}
+
+.copyright__link {
+  display: block;
+  width: 29px;
+  height: 35px;
+
+  svg {
+    fill: $font-color-link;
+  }
+
+  &:hover {
+    svg {
+      fill: $font-color-link--hover;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $font-color-link--active;
+    }
+  }
+}
