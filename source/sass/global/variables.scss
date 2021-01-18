@@ -5,10 +5,11 @@ $white: #ffffff;
 $lightblack: #333333;
 $blue: #81b3d2;
 $gray: #e5e5e5;
+$lightgray: #f2f2f2;
 
 $bg-color-main: $white;
 $bg-color-accent: $blue;
-$bg-color-secondary: #f2f2f2;
+$bg-color-secondary: $lightgray;
 
 $font-color-base: $lightblack;
 $font-color-accent: $white;
@@ -20,9 +21,6 @@ $bg-color-button--active: #5496bd;
 $bg-color-button--disabled: $gray;
 $font-color-button: $white;
 
-$bg-color-advantage: #eeeeee;
-$border-color-advantage: #d6d6d6;
-
 $font-color-link: $black;
 $font-color-link--hover: $blue;
 $font-color-link--active: rgba($font-color-link, 0.3);
@@ -30,6 +28,27 @@ $font-color-link--active: rgba($font-color-link, 0.3);
 $font-color-link-current: #766357;
 $font-color-link-current--hover: #604e43;
 $font-color-link-current--active: rgba($font-color-link-current, 0.3);
+
+$bg-color-advantage: #eeeeee;
+$border-color-advantage: #d6d6d6;
+$border-color-form: $gray;
+$border-color-form-secondary: #dbdbdb;
+
+$bg-color-form-el: $lightgray;
+$bg-color-form-el--hover: $gray;
+$bg-color-form-el--active: #d5d5d5;
+$font-color-form-el: $lightblack;
+$font-color-form-el-text: $black;
+
+$bg-color-form-el-secondary: #e6e6e6;
+
+$bg-color-form-input: $lightgray;
+$bg-color-form-input--hover: $gray;
+$bg-color-form-input--active: $white;
+$border-color-form-input--active: $gray;
+$bg-color-form-input--invalid: $white;
+$border-color-form-input--invalid: #ff0000;
+$font-color-form-input: $black;
 
 
 /*
