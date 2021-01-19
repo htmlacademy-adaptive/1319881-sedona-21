@@ -1,0 +1,176 @@
+.control {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+    align-items: center;
+
+    background-color: $bg-color-control;
+  }
+}
+
+.control__progressbar {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+
+  padding: 0 22px;
+
+  background-color: $bg-color-control;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 0;
+
+    padding-right: 36px;
+    padding-left: 37px;
+
+    background-color: transparent;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    left: 22px;
+
+    height: 3px;
+
+    transform: translateY(-50%);
+
+    background-color: rgba($bg-color-control-segment, 0.2);
+
+    @media (min-width: $tablet-width) {
+      right: 36px;
+      left: 37px;
+    }
+  }
+}
+
+.control__segment {
+  position: absolute;
+  top: 50%;
+  left: 58px;
+
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+
+  transform: translateY(-50%);
+
+  border-radius: 50%;
+
+  background-color: $bg-color-control-segment;
+
+  @media (min-width: $tablet-width) {
+    left: 150px;
+  }
+}
+
+.control__button {
+  position: relative;
+
+  width: 66px;
+  height: 66px;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  z-index: 1;
+
+  &:hover {
+    svg {
+      fill: $bg-color-control-button--hover;
+
+      @media (min-width: $tablet-width) {
+        fill: $bg-color-control-button--tablet;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $bg-color-control-button--hover;
+      opacity: 0.3;
+
+      @media (min-width: $tablet-width) {
+        fill: $bg-color-control-button--tablet;
+        opacity: 0.3;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+
+    background-color: transparent;
+  }
+
+  svg {
+    fill: $bg-color-control-button;
+
+    @media (min-width: $tablet-width) {
+      fill: $bg-color-control-button--tablet;
+    }
+  }
+
+  &--replay {
+    svg {
+      width: 16px;
+      height: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 26px;
+      height: 30px;
+      margin-bottom: 5px;
+      margin-left: 29px;
+      padding: 5px;
+      order: -1;
+    }
+  }
+
+  &--subtitles {
+    margin-left: auto;
+    padding-left: 21px;
+
+    svg {
+      width: 32px;
+      height: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 32px;
+      height: 20px;
+      margin-bottom: 11px;
+      margin-right: 31px;
+      padding: 5px;
+    }
+  }
+
+  &--fullscreen {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 20px;
+      margin-bottom: 11px;
+      margin-right: 47px;
+      padding: 5px;
+    }
+  }
+}

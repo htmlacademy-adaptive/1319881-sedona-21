@@ -1,0 +1,154 @@
+.photo {
+  max-width: $desktop-width;
+  width: 100%;
+  margin: 0 auto;
+
+  border-bottom: 1px solid $gray;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    padding: 0 60px;
+
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 0;
+  }
+}
+
+.photo__card {
+  position: relative;
+  margin: 0;
+  padding: 22px 20px 16px;
+
+  border-top: 1px solid $border-color-photo-card;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    border-top: none;
+  }
+
+  &--full {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &:nth-of-type(2n) {
+    .photo__card-info {
+      padding-right: 30px;
+    }
+  }
+
+  &:nth-of-type(2n + 3) {
+    .photo__card-info {
+      padding-right: 37px;
+    }
+  }
+}
+
+.photo__card-picture {
+  display: flex;
+
+  img {
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+.photo__card-caption {
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 0;
+    padding: 15px 21px 16px 19px;
+
+    background-color: $bg-color-secondary;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding-left: 21px;
+    color: $bg-color-main;
+
+    background-color: rgba($font-color-heading, 0.3);
+  }
+
+  &--bg {
+    @media (min-width: $tablet-width) {
+      background-color: $bg-color-photo-card-caption;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: rgba($font-color-heading, 0.3);
+    }
+  }
+}
+
+.photo__card-wrapper {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo__card-title {
+  margin: 0 0 1px;
+
+  font-size: 14px;
+  color: $font-color-heading;
+
+  @media (min-width: $desktop-width) {
+    color: $bg-color-main;
+  }
+}
+
+.photo__card-author {
+  margin: 0;
+  text-transform: none;
+}
+
+.photo__card-like {
+  display: flex;
+  margin-top: 11px;
+
+  line-height: 24px;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 1px;
+  }
+
+  svg {
+    width: 23px;
+    height: 21px;
+    margin-right: 14px;
+
+    fill: rgba($font-color-heading, 0.3);
+
+    @media (min-width: $tablet-width) {
+      margin-right: 9px;
+    }
+
+    @media (min-width: $desktop-width) {
+      fill: $bg-color-main;
+    }
+  }
+
+  span {
+    display: inline-block;
+    padding-top: 2px;
+  }
+}
