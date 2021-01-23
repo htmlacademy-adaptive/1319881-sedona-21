@@ -112,16 +112,28 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-background-inner-mobile@2x.jpg");
+    }
+
     @media (min-width: $tablet-width) {
       height: 290px;
 
       background-image: url("../img/intro-background-inner-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/intro-background-inner-tablet@2x.jpg");
+      }
     }
 
     @media (min-width: $desktop-width) {
       height: 301px;
 
       background-image: url("../img/intro-background-inner-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/intro-background-inner-desktop@2x.jpg");
+      }
     }
   }
 }
