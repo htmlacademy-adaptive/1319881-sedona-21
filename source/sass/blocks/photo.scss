@@ -38,6 +38,12 @@
     @media (min-width: $tablet-width) {
       grid-column: 1 / -1;
     }
+
+    .photo__card-caption {
+      @media (min-width: $desktop-width) {
+        padding-right: 21px;
+      }
+    }
   }
 
   &:nth-of-type(2n) {
@@ -83,6 +89,7 @@
     left: 0;
 
     padding-left: 21px;
+    padding-right: 29px;
     color: $bg-color-main;
 
     background-color: rgba($font-color-heading, 0.3);
@@ -128,6 +135,8 @@
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
+    min-width: 56px;
+
     margin-top: 1px;
   }
 

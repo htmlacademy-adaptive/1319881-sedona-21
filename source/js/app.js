@@ -35,8 +35,5 @@ document.addEventListener("DOMContentLoaded", function () {
       );
       myMap.geoObjects.add(myPlacemark);
     }
-
-    //Hide map image, if map container was found
-    //document.querySelector(".page-footer__map-image").classList.add("visually-hidden");
   })();
 });
