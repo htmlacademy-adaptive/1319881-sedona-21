@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона - Фото и видео</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="icon" href="img/favicon-16x16.ico" sizes="16x16" type="image/png">
   <link rel="apple-touch-icon" href="img/favicon-32x32.ico" sizes="32x32">
   <link rel="stylesheet" href="css/style.min.css">
@@ -18,7 +20,7 @@
           <img class="page-header__logo-image" src="img/logo.svg" width="102" height="84" alt="Логотип Седоны">
         </picture>
       </a>
-      <nav class="page-nav page-nav--show">
+      <nav class="page-nav">
         <button class="page-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -94,7 +96,7 @@
           </picture>
         </a>
         <figcaption class="photo__card-caption">
-          <div>
+          <div class="photo__card-wrapper">
             <h3 class="photo__card-title">Местная растительность</h3>
             <p class="photo__card-author">Автор фото: Сергей</p>
           </div>
@@ -120,7 +122,7 @@
           </picture>
         </a>
         <figcaption class="photo__card-caption photo__card-caption--bg">
-          <div>
+          <div class="photo__card-wrapper">
             <h3 class="photo__card-title">Дорога на север</h3>
             <p class="photo__card-author">Автор фото: Петр</p>
           </div>
@@ -146,7 +148,7 @@
           </picture>
         </a>
         <figcaption class="photo__card-caption">
-          <div>
+          <div class="photo__card-wrapper">
             <h3 class="photo__card-title">Мост Дьявола</h3>
             <p class="photo__card-author">Автор фото: Антон</p>
           </div>

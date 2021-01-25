@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона - Главная</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="icon" href="img/favicon-16x16.ico" sizes="16x16" type="image/png">
   <link rel="apple-touch-icon" href="img/favicon-32x32.ico" sizes="32x32">
   <link rel="stylesheet" href="css/style.min.css">
@@ -18,7 +20,7 @@
           <img class="page-header__logo-image" src="img/logo.svg" width="102" height="84" alt="Логотип Седоны">
         </picture>
       </a>
-      <nav class="page-nav page-nav--show">
+      <nav class="page-nav">
         <button class="page-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -57,7 +59,7 @@
         <li class="advantages__item advantage advantage--full">
           <div class="advantage__text advantage__text--width advantage__text--bgcolor">
             <h3 class="advantage__title">Настоящий городок</h3>
-            <p class="advantage__number">- №1 -</p>
+            <p class="advantage__number">— №1 —</p>
             <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="advantage__picture">
@@ -92,7 +94,7 @@
         <li class="advantages__item advantage advantage--full">
           <div class="advantage__text advantage__text--width advantage__text--bgcolor advantage__text--indents">
             <h3 class="advantage__title">Там есть мост дьявола</h3>
-            <p class="advantage__number">- №2 -</p>
+            <p class="advantage__number">— №2 —</p>
             <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <div class="advantage__picture advantage__picture--invert">
@@ -109,21 +111,21 @@
         <li class="advantages__item advantage">
           <div class="advantage__text advantage__text--padding advantage__text--border">
             <h3 class="advantage__title">Небольшая площадь</h3>
-            <p class="advantage__number">- №3 -</p>
+            <p class="advantage__number">— №3 —</p>
             <p>Все интересные места находятся очень близко</p>
           </div>
         </li>
         <li class="advantages__item advantage">
           <div class="advantage__text advantage__text--padding advantage__text--border">
             <h3 class="advantage__title">Красивая дорога</h3>
-            <p class="advantage__number">- №4 -</p>
+            <p class="advantage__number">— №4 —</p>
             <p>Ехать в Седону из лас-вегаса совсем не скучно!</p>
           </div>
         </li>
         <li class="advantages__item advantage">
           <div class="advantage__text advantage__text--padding">
             <h3 class="advantage__title">Мало туристов</h3>
-            <p class="advantage__number">- №5 -</p>
+            <p class="advantage__number">— №5 —</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </div>
         </li>
@@ -132,7 +134,7 @@
 
     <section class="booking">
       <h2 class="booking__title">Заинтересовались?</h2>
-      <p class="booking__desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+      <p class="booking__desc">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
       <a class="booking__button button" href="#">Найти гостиницу</a>
     </section>

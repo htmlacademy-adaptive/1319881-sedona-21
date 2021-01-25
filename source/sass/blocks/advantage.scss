@@ -154,7 +154,7 @@
       @media (min-width: $tablet-width) {
         width: 76px;
         height: 68px;
-        margin: 6px 0 27px;
+        margin: 6px 0 25px;
 
         background-image: url("../img/icon-burger-tablet.svg");
       }
@@ -165,6 +165,12 @@
 
       @media (min-width: $tablet-width) {
         padding-top: 0;
+      }
+    }
+
+    .advantage__title {
+      @media (min-width: $tablet-width) {
+        margin-bottom: 22px;
       }
     }
 
@@ -235,7 +241,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        padding: 0 39px 0 40px;
+        padding: 0 40px;
       }
     }
   }
@@ -260,8 +266,6 @@
   line-height: 26px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 13px;
-
     font-size: 21px;
   }
 
