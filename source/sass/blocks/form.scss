@@ -413,7 +413,6 @@
   [type="checkbox"]:focus + .form__fieldset-name {
     &::before {
       background-color: $bg-color-form-el--active;
-      outline: 2px solid $black-secondary;
     }
   }
 
@@ -486,6 +485,12 @@
       opacity: 0;
     }
   }
+
+  [type="checkbox"]:disabled + .form__fieldset-name,
+  [type="radio"]:disabled + .form__fieldset-name {
+    opacity: 0.4;
+    pointer-events: none;
+  }
 }
 
 .form__fieldset-name {
@@ -507,6 +512,10 @@
   border: 4px solid $bg-color-form-input;
   background-color: $bg-color-form-input;
   transition: border 0.4s, background-color 0.4s;
+
+  outline: 0;
+
+  cursor: pointer;
 
   &::placeholder {
     font-size: 18px;
@@ -538,7 +547,7 @@
     background-color: $bg-color-form-input--hover;
   }
 
-  &:active {
+  &:focus {
     border-color: $border-color-form-input--active;
     background-color: $bg-color-form-input--active;
   }
@@ -558,9 +567,13 @@
   line-height: 26px;
   font-weight: bold;
 
-  border: none;
-
+  border: 4px solid $bg-color-form-input;
   background-color: $bg-color-form-input;
+
+  outline: 0;
+
+  resize: none;
+  cursor: pointer;
 
   &::placeholder {
     font-size: 18px;
@@ -573,6 +586,21 @@
     color: $font-color-form-input;
 
     opacity: 1;
+  }
+
+  &:hover {
+    border-color: $bg-color-form-input--hover;
+    background-color: $bg-color-form-input--hover;
+  }
+
+  &:focus {
+    border-color: $border-color-form-input--active;
+    background-color: $bg-color-form-input--active;
+  }
+
+  &--invalid {
+    border-color: $border-color-form-input--invalid;
+    background-color: $bg-color-form-input--invalid;
   }
 
   @media (min-width: $tablet-width) {

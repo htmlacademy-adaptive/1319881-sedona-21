@@ -135,9 +135,13 @@
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
-    min-width: 56px;
+    min-width: 64px;
 
     margin-top: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 56px;
   }
 
   svg {
