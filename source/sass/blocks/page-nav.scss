@@ -40,6 +40,19 @@
         transition: max-height 0.4s, opacity 0.1s, visibility 0s;
       }
     }
+
+    &--nojs {
+      .page-nav__toggle {
+        display: none;
+      }
+
+      .page-nav__list {
+        max-height: 100%;
+
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
 }
 
